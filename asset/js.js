@@ -1,7 +1,11 @@
 let BoxColor=document.getElementsByClassName("Color");
 let box=document.getElementsByClassName("BoxToBox");
 let iconSocial=document.getElementsByTagName("i");
-//let buttom=document.getElementsByClassName("buttom");
+let MainPage=document.getElementsByClassName("main");
+let abuteMe=document.getElementsByClassName("abuteMe");
+let PageAboutMe=document.getElementsByClassName("PageAboutMe");
+
+
 
 BoxColor[0].style.top="80px";
 BoxColor[0].style.right="1px";
@@ -16,18 +20,6 @@ box[0].addEventListener("mouseleave", function(){
      BoxColor[1].style.right="280px";
      BoxColor[0].style.right="-30px";
 })
-
-
-
-// buttom.forEach(buttom => {
-//     bottom.addEventListener("mousemove",()=>{
-//         buttom.style.backgroundColor="red"
-//     })
-// });
-
-// buttom.addEventListener("mousemove",()=>{
-//     buttom[0].style.backgroundColor="red"
-// })
 
 
 let buttons = document.getElementsByClassName("buttom"); // انتخاب تمام دکمه‌ها
@@ -47,6 +39,21 @@ Array.from(buttons).forEach((button, index) => {
         button.style.boxShadow = ""; // حذف باکس شدو وقتی موس خارج شد
     });
 });
+
+buttons[3].addEventListener("click", ()=>{
+    alert("دوست عزیز فعلا لینک در دسترس نیست بزودی در update بعدی قرار میگیرد از صبر شما مچکریم")
+})
+
+
+
+abuteMe[0].addEventListener("click",()=>{
+    setTimeout(() => {
+        MainPage[0].style.display="none"
+    }, 1000);
+
+    box[0].style.transform="rotate3d(1, 1, 1, 360deg)";
+    PageAboutMe[0].style.display="block"
+})
 
 
 
