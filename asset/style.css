@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Katibeh&family=Lalezar&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+.Box {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.BoxToBox {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  color: azure;
+  -webkit-box-shadow: 1px 2px 12px 0px #0a0a0a;
+          box-shadow: 1px 2px 12px 0px #0a0a0a;
+}
+
+.Color {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 80px;
+  height: 80px;
+  background-color: #a20925;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 20px 20px #a20925;
+          box-shadow: 0px 1px 20px 20px #a20925;
+  position: relative;
+  z-index: -1;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 10px;
+  margin: 10px 30%;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+}
+
+.buttom {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3), inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3), inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+i {
+  position: relative;
+  top: 30%;
+  font-size: 20px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+h2 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 20px 0;
+}
+/*# sourceMappingURL=style.css.map */
