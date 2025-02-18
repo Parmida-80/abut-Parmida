@@ -33,16 +33,21 @@ Array.from(buttons).forEach((button, index) => {
         button.style.boxShadow = `inset 0 0 20px ${colors[index]}49, 
                                   inset 0 0 5px ${colors[index]}, 
                                   0 5px 5px rgba(0, 0, 0, 0.164)`;
+
+        //for(let i=0;i<iconSocial.length;i++){
+            iconSocial[index].style.color=colors[index];
+        //}                         
     });
 
     button.addEventListener("mouseleave", () => {
         button.style.boxShadow = ""; // حذف باکس شدو وقتی موس خارج شد
+        iconSocial[index].style.color="aliceblue";
     });
 });
 
-buttons[3].addEventListener("click", ()=>{
-    alert("دوست عزیز فعلا لینک در دسترس نیست بزودی در update بعدی قرار میگیرد از صبر شما مچکریم")
-})
+// buttons[3].addEventListener("click", ()=>{
+//     alert("دوست عزیز فعلا لینک در دسترس نیست بزودی در update بعدی قرار میگیرد از صبر شما مچکریم")
+// })
 
 
 
@@ -53,7 +58,15 @@ abuteMe[0].addEventListener("click",()=>{
 
     box[0].style.transform="rotate3d(1, 1, 1, 360deg)";
     PageAboutMe[0].style.display="block"
+
+    if(screen.width<=100){
+        box[0].style.width="500px"
+    }
 })
+
+
+
+
 
 
 
