@@ -1,4 +1,4 @@
-@import '_config.scss';
+@import 'fontUrl';
 
 * {
     margin: 0;
@@ -11,7 +11,7 @@ body {
     height: 100%;
     background-image: url(img/d82abf5eeee35ebb6eb5c0c02fec1cf5.jpg);
     background-size: cover;
-    position: fixed;
+    
 }
 
 .abuteMe {
@@ -166,6 +166,7 @@ p {
 
     .BoxToBox {
         width: 300px;
+        margin: 20px auto;
     }
 
     .btn {

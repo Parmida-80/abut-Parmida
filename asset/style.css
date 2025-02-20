@@ -159,6 +159,7 @@ p {
   }
   .BoxToBox {
     width: 300px;
+    margin: 20px auto;
   }
   .btn {
     margin: 20px;

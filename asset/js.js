@@ -45,11 +45,21 @@ Array.from(buttons).forEach((button, index) => {
     });
 });
 
-// buttons[3].addEventListener("click", ()=>{
-//     alert("دوست عزیز فعلا لینک در دسترس نیست بزودی در update بعدی قرار میگیرد از صبر شما مچکریم")
-// })
 
 
+if(screen.width<500){
+    Array.from(buttons).forEach((button, index) => {
+        button.addEventListener("click", () => {
+            button.style.boxShadow = `inset 0 0 20px ${colors[index]}49, 
+                                      inset 0 0 5px ${colors[index]}, 
+                                      0 5px 5px rgba(0, 0, 0, 0.164)`;
+    
+            
+                iconSocial[index].style.color=colors[index];
+                                   
+        });
+    });
+}
 
 abuteMe[0].addEventListener("click",()=>{
     setTimeout(() => {
@@ -59,10 +69,16 @@ abuteMe[0].addEventListener("click",()=>{
     box[0].style.transform="rotate3d(1, 1, 1, 360deg)";
     PageAboutMe[0].style.display="block"
 
-    if(screen.width<=100){
-        box[0].style.width="500px"
+    if(screen.width>500){
+        
+            box[0].style.width="500px"
+        
+    }else if(screen.width<500){
+        box[0].style.width="250px"
     }
+    
 })
+
 
 
 
